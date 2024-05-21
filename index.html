@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Buld.com</title>
+    <style>
+     *
+     {
+        margin: 0;
+     }
+     button
+     {
+        background-color: black;
+        color: white;
+        padding: 30px;
+        border: none;
+        border-radius: 40px;
+        font-size: 20px;
+     }
+     img
+     {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+     }
+    </style>
+</head>
+<body>
+    <img src="img1.jpg" alt="" id="img" height="400px">
+    <button onclick="on()">Turn On</button>
+    <button onclick="off()">Turn Off</button>
+    <script>
+    var msg = document.getElementById('img')
+    function on(){
+        msg.src='img2.jpg'
+    }
+    function off(){
+        msg.src='img1.jpg'
+    }
+    </script>
+</body>
+</html>
